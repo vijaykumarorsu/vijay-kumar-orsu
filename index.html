@@ -260,19 +260,22 @@
     My <span class="gradient-text">Experience</span>
   </h3>
   <div class="relative max-w-3xl mx-auto">
-    <div class="absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+    <!-- Vertical line on desktop, hidden on mobile -->
+    <div class="hidden md:block absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+    <!-- Horizontal line on mobile -->
+    <div class="block md:hidden absolute top-12 left-0 w-full h-0.5 bg-slate-700"></div>
 
     <!-- Devfrend Web Solutions -->
-    <div class="mb-8 flex justify-between items-center w-full timeline-item">
-      <div class="order-1 w-5/12"></div>
-      <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+    <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center w-full timeline-item">
+      <div class="hidden md:block order-1 w-5/12"></div>
+      <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
         <h4 class="text-lg font-bold mb-2">Junior Frontend Developer</h4>
         <p class="text-sm text-slate-400 mb-2">Devfrend Web Solutions • May - Jun 2025</p>
         <p class="text-slate-300 mb-3">
           Contributed to client-side projects using <strong>React.js</strong> and <strong>TailwindCSS</strong>. 
           Implemented UI/UX components and optimized responsiveness to enhance user experience.
         </p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 flex-wrap">
           <a href="https://www.linkedin.com/company/devfrendcom/posts/?feedView=all" target="_blank" class="text-sm px-3 py-1 bg-blue-600 rounded-lg hover:bg-blue-700">Company Profile</a>
           <a href="https://drive.google.com/file/d/1CpHvY3GKxI6tqcNIAkDMGSB9Y_TgNifx/view?usp=sharing" target="_blank" class="text-sm px-3 py-1 bg-green-600 rounded-lg hover:bg-green-700">View Certificate</a>
         </div>
@@ -280,41 +283,41 @@
     </div>
 
     <!-- Prodigy Infotech -->
-    <div class="mb-8 flex justify-between items-center w-full timeline-item">
-      <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+    <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center w-full timeline-item">
+      <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
         <h4 class="text-lg font-bold mb-2">Web Developer Intern</h4>
         <p class="text-sm text-slate-400 mb-2">Prodigy Infotech • Sep 2024</p>
         <p class="text-slate-300 mb-3">
           Developed mini-projects including <strong>portfolio website, weather app, tic-tac-toe</strong>, 
           and <strong>navbar</strong> using HTML, CSS, and JavaScript.
         </p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 flex-wrap">
           <a href="https://www.linkedin.com/company/prodigy-infotech/" target="_blank" class="text-sm px-3 py-1 bg-blue-600 rounded-lg hover:bg-blue-700">Company Profile</a>
           <a href="https://drive.google.com/file/d/1NShWZ6VRzMzoQXPZgZy08YXjvoBDBCbc/view?usp=sharing" target="_blank" class="text-sm px-3 py-1 bg-green-600 rounded-lg hover:bg-green-700">View Certificate</a>
         </div>
       </div>
-      <div class="order-1 w-5/12"></div>
+      <div class="hidden md:block order-1 w-5/12"></div>
     </div>
 
     <!-- R Square Educational Services -->
-    <div class="mb-8 flex justify-between items-center w-full timeline-item">
-      <div class="order-1 w-5/12"></div>
-      <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+    <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center w-full timeline-item">
+      <div class="hidden md:block order-1 w-5/12"></div>
+      <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
         <h4 class="text-lg font-bold mb-2">Junior Developer Intern</h4>
         <p class="text-sm text-slate-400 mb-2">R Square Educational Services • May 2023</p>
         <p class="text-slate-300 mb-3">
           Assisted in developing web modules using <strong>JavaScript</strong> 
           and contributed to backend logic with <strong>Node.js</strong>.
         </p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 flex-wrap">
           <a href="https://www.linkedin.com/in/r-square-educational-services-39a4302b3/" target="_blank" class="text-sm px-3 py-1 bg-blue-600 rounded-lg hover:bg-blue-700">Company Profile</a>
           <a href="https://drive.google.com/file/d/1shn58N3Z7pyqjOOLWc64KH2aZdNp2T6E/view?usp=sharing" target="_blank" class="text-sm px-3 py-1 bg-green-600 rounded-lg hover:bg-green-700">View Certificate</a>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>
+
 
 <!-- Skills Section -->
 <section class="py-20 bg-dark text-center" id="skills">
@@ -846,5 +849,6 @@
         
         window.addEventListener('scroll', animateSkillBars);
     </script>
+
 </body>
 </html>
